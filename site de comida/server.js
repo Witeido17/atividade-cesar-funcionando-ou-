@@ -19,6 +19,10 @@ if (!fs.existsSync('./dados/nomes.json')) {
 }
 
 
+app.get('/', (req, res) => {
+    res.render('index');
+});
+
 app.get('/index', (req, res) => {
     res.render('index');
 });
