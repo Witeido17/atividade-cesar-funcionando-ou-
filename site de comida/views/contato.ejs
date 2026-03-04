@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Navbar igual -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index">
                 <i class="bi bi-cup-hot-fill"></i> Sabores dos Games
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -20,16 +20,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.ejs">Produtos</a>
+                        <a class="nav-link" href="index">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="detalhes.ejs">Detalhes</a>
+                        <a class="nav-link" href="detalhes">Detalhes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fotos.ejs">Fotos</a>
+                        <a class="nav-link" href="fotos">Fotos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contato.ejs">Contato</a>
+                        <a class="nav-link active" href="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -38,6 +38,7 @@
 
     <!-- Contato -->
     <div class="container py-5">
+
         <div class="row">
             <div class="col-lg-6">
                 <h1 class="mb-4">Entre em Contato</h1>
@@ -86,7 +87,7 @@
             
             <div class="col-lg-6">
                 <h2 class="mb-4">Envie uma Mensagem</h2>
-                <form method="post">
+                <form method="post" action="/contato">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="nome" name="nome" required>
